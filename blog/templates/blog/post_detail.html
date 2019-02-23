@@ -2,6 +2,9 @@
 
 {% block content %}
     <div class="post">
+        {% if post.image %}
+            <img src="{{ post.image }}">
+        {% endif %}
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
